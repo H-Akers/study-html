@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Post-High School Education Survey Form</title>
+</head>
+    <body>
+      <div class="survey">
+      <h1 id="title"> Post-High School Education Survey Form
+        <p id="description">Thank you for taking the time to help us poll this informtion.</p>
+        <form id="survey-form"> 
+          <fieldset>
+           <label for="name" id="name-label"> Name <input type="text" id="name" name="name" placeholder="John Doe" required></label>
+           <label for="email"id="email-label">Email <input type="email" id="email" name="email" placeholder="John.Doe@mydomain.com" required></label>
+           <label for="number" id="number-label">Age (Optional) <input type="number" id="number" name="age" min="16" max="110" placeholder="20"></label>
+         </fieldset>
+         <fieldset>
+           <label for="dropdown">What is your current education level? <select id="dropdown" name="role">
+            <option value="">Please select one...</option>
+            <option value="1">Associate's</option>
+            <option value="2">Bachelor's</option>
+            <option value="3">Master's</option>
+            <option value="4">Doctorate</option>
+            <option value="5">Other</option>
+            </select>
+            </label>
+          </fieldset>
+          <fieldset>
+            <label>What field is your major?
+              <div class="major"> 
+            <input type="checkbox" value="Education" class="inline"> Education
+            <input type="checkbox" value="Science"class="inline"> Science
+            <input type="checkbox" value="Engineering"class="inline"> Engineering
+            <input type="checkbox" value="Information Technology"class="inline"> Information Technology
+            <input type="checkbox" value="Literature"class="inline"> Literature
+            <input type="checkbox" value="Mathematics"class="inline"> Mathematics
+            <input type="checkbox" value="Arts"class="inline"> Arts
+            <input type="checkbox" value="Medicine"> Medicine
+          </fieldset>
+          <fieldset>
+            <p>Are you male or female? </p>
+            <label for="male-radio"><input type="radio" name="gender" id="male-radio" value="male-radio">Male
+            <label for="female-radio"><input type="radio" name="gender"id="female-radio" value="female-radio">Female
+          </fieldset>
+          <fieldset> 
+            <label for="satisfaction">Please explain why you are happy or unhapy with your level of education and field of your major.
+              <textarea id="satisfaction" rows="5" cols="20" placeholder="I like how my education..."></textarea>
+            </label>
+          </fieldset>
+         <input type="submit" value="Submit" id="submit">
+        </form>
+
+      </h1>
+    </body>
