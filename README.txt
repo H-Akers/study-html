@@ -1,2 +1,2 @@
 Lerarnig html - freecodecamp
-html survery project.
+Projects completed in receiving the FreeCodeCamp - Responsive Web Design Certificate
